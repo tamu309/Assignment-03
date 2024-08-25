@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-03</title>
 
+    
+    
     <script src="https://cdn.tailwindcss.com"></script>
 
 
@@ -18,17 +20,25 @@
     <!-- font awesome link  -->
 
     <style>
-
     .manrope-normal {
     font-family: "Manrope", sans-serif;
+    margin: 10px;
     }
-
+    @media screen and (max-width:576px) {
+      .let{
+        width: 100vw;
+      }
+      .manrope-normal {
+      margin: 0px;
+     
+    }
+    }
     </style>
 
 
 </head>
 
-<body class="bg-gray-50 m-10 manrope-normal">
+<body class="bg-gray-50  manrope-normal">
 
 <header>
 
@@ -76,7 +86,7 @@
 
     <!-- Small device start  -->
 
-    <section class="bg-base-100 ">
+    <section class="bg-base-100 m-10 mb-0">
 
             <div class="flex justify-between items-center lg:hidden ">
 
@@ -115,7 +125,7 @@
 
     <!-- Banner Section start  -->
 
-     <section class="grid justify-center items-center py-10 lg:pt-20">
+     <section class="grid justify-center items-center pt-10 lg:pt-0 py-0 lg:py-10 lg:pt-20">
 
         <div class="hero bg-base-200 min-h-screen ">
             
@@ -144,31 +154,33 @@
 
     <!-- About us Section Start  -->
 
-    <section class="bg-violet-50 max-w-auto relative lg:mx-20">
+    <section class="lg:bg-violet-50 max-w-auto relative lg:mx-20 grid justify-center items-center ">
 
            <div class="border-dashed border-2 border-black-500 p-4 px-0 absolute hidden lg:block" style="top:70px; left: 55px;">
             <img src="https://i.ibb.co/4WpzQfH/Vector-14.png" alt="">
            </div>
 
-            <div class="grid grid-flow-col lg:flex  justify-between items-center gap-20  p-20  " ">
+
+
+            <div class="grid grid-flow-row lg:grid lg:grid-flow-col  justify-center  lg:justify-between items-center lg:gap-20  p-0 lg:p-20  " ">
              
-             <div class="grid justify-start items-center gap-12">
+             <div class="grid justify-center lg:grid lg:justify-start items-center  gap-10 lg:gap-12">
 
                 <div>
-                    <div class="card flex justify-start items-center gap-4 rounded-full bg-[#FFFFFF] w-36 p-3 mb-8">
+                    <div class="card flex justify-center ms-28 lg:ms-0 lg:justify-start items-center gap-4 rounded-full bg-[#FFFFFF] w-36 p-3 px-5 mb-8 ">
                         <i class="fa-solid fa-arrow-right"></i>
                         <div class="card-body">
                             <h3 class="card-title">About Us</h3>
                         </div>
                     </div>
-                    <h1 class="text-5xl font-bold">We design thoughtful, liveable spaces</h1>
-                    <p class="py-6 ">
+                    <h1 class="text-5xl font-bold text-center lg:text-left">We design thoughtful, liveable spaces</h1>
+                    <p class="py-6  text-center lg:text-left">
                         The barn house captivates with its blend of rustic charm and 
                         modern sophistication, featuring weathered wood, sleek metal accents.
                     </p>
-                    
                 </div>
-                  <div class="card card-side bg-base-100 shadow-xl flex gap-5 p-6 bg-[#FFFFFF] rounded-lg w-11/12">
+
+                  <div class="card card-side bg-base-100 shadow-xl flex gap-5 p-6  bg-[#FFFFFF] rounded-lg w-11/12 ms-5 lg:ms-0">
                     <figure class="flex justify-center items-center">
                       <img
                         src="https://i.ibb.co/NVCj3B8/Group-6.png"
@@ -179,22 +191,22 @@
                       <p>The barn house captivates with its blend of  <br>rustic charm and modern.</p>
                     </div>
                   </div>
-                  <div class="card card-side bg-base-100 shadow-xl flex gap-5 p-6 bg-[#FFFFFF] rounded-lg w-11/12">
+                  <div class="card card-side bg-base-100 shadow-xl flex gap-5 p-6 py-10 lg:py-6 bg-[#FFFFFF] rounded-lg w-11/12 ms-5 lg:ms-0">
                     <figure class="flex justify-center items-center">
                       <img 
                         src="https://i.ibb.co/rp3tqV8/Vector.png"
                         alt="Movie" />
                     </figure>
                     <div class="card-body">
-                      <h2 class="card-tittle text-2xl font-bold pb-3">Residential</h2>
+                      <h2 class="card-tittle text-2xl font-bold leading-10 lg:leading-none lg:pb-3">Residential</h2>
                       <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
                     </div>
                 </div>
 
              </div>
 
-             <div class="grid justify-start items-center ">
-                <img class="h-screen w-full py-16"
+             <div class="grid justify-start items-center mx-5 lg:mx-0 me-2 lg:me-0 ">
+                <img class="h-80 lg:h-screen w-screen lg:w-full py-16"
                 src="https://i.ibb.co/0GHDtsh/Rectangle.png"
                 class="max-w-sm rounded-lg shadow-2xl" />
                 
@@ -208,10 +220,10 @@
 
     <!-- How we work section start  -->
 
-    <section class="bg-violet-50 lg:mx-20 pb-20">
+    <section class="lg:bg-violet-50 lg:mx-20 pb-20">
 
         <div>
-            <div class="grid justify-center items-center w-48 lg:w-full text-center">
+            <div class="grid justify-center items-center   lg:w-full text-center mx-14 lg:mx-0">
                 <div class="card flex justify-center items-center gap-4 rounded-full bg-[#FFFFFF]  w-52 p-3 mb-8 mx-96">
                     <i class="fa-solid fa-arrow-right"></i>
                     <div class="card-body">
@@ -219,14 +231,19 @@
                     </div>
                 </div>
                 <h1 class="text-3xl lg:text-5xl font-bold">Our Works Process</h1>
-                <p class="py-6 w-74">
+                <p class="py-6 w-74 text-center hidden lg:block">
                     The barn house captivates with its blend of rustic charm and 
                     modern sophistication, <br> featuring weathered wood, sleek metal accents.
                 </p>
                 
+                <p class="py-6 w-74 text- lg:hidden ">
+                  The barn house captivates with <br> its  blend of rustic charm and 
+                  modern <br> sophistication,  featuring weathered wood, <br> sleek metal accents.
+              </p>
+
             </div>
 
-            <div class="grid lg:flex justify-center items-center gap-11">
+            <div class="grid lg:flex justify-center items-center gap-11 ms-3 lg:ms-0">
                 <div class="card card-side bg-base-100 shadow-xl grid gap-5 p-5 bg-[#FFFFFF] rounded-lg w-72 bg-fuchsia-300">
                     <figure class="flex justify-start items-center">
                       <img
@@ -281,23 +298,26 @@
 
     <!-- Explore Section start  -->
 
-    <section class="mx-16  my-20">
+    <section class="mx-16 my-8  lg:my-20">
 
         <div>
 
-            <div class="grid justify-center items-center w-48 lg:w-full text-center">
+            <div class="grid justify-center items-center w-64 lg:w-full text-center">
                 <div class="card flex justify-center items-center gap-4 rounded-full bg-[#FFFFFF]  w-72 p-3 mb-8 mx-96">
                     <i class="fa-solid fa-arrow-right"></i>
                     <div class="card-body">
                         <h3 class="card-title">Explore our Latest works</h3>
                     </div>
                 </div>
-                <h1 class="text-3xl lg:text-5xl font-bold">Our Latest Portfolio</h1>
-                <p class="py-6 w-74">
+                <h1 class="text-3xl lg:text-5xl font-bold text-center">Our Latest Portfolio</h1>
+                <p class="py-6 w-74 hidden lg:block">
                     The barn house captivates with its blend of rustic charm and 
                     modern sophistication, <br> featuring weathered wood, sleek metal accents.
                 </p>
-                
+                <p class="py-6 w-74 lg:hidden">
+                  The barn house captivates with its blend <br> of rustic charm and 
+                   sophistication,<br>featuring weathered wood, sleek <br> metal accents.
+              </p>
             </div>
 
             <div class="grid  grid-flow-row">
@@ -373,12 +393,100 @@
 
     <!-- Explore Section end  -->
 
+
+    <!-- Own make Section  -->
+
+    <!-- What people Say section start -->
+
+    <section class="my-20">
+
+      <div>
+
+        <div class="grid justify-center items-center w-64 lg:w-full text-center ms-16 lg:ms-0">
+          <div class="card flex justify-center items-center gap-4 rounded-full bg-[#FFFFFF] w-56 lg:w-72 p-3 mb-8 ms-4  lg:mx-96">
+              <i class="fa-solid fa-arrow-right"></i>
+              <div class="card-body">
+                  <h3 class="card-title ">What People Say?</h3>
+              </div>
+          </div>
+          <h1 class="text-2xl lg:text-5xl font-bold ">What People Say?</h1>
+          <p class="py-6 w-74">
+              The barn house captivates with its blend of rustic charm and 
+              modern sophistication, <br> featuring weathered wood, sleek metal accents.
+          </p>
+          
+      </div>
+
+      <div class=" grid lg:flex justify-center items-center gap-11">
+
+        <div class="card bg-gray-200 w-72 h-64 shadow-xl p-3 py-4  grid justify-center items-center rounded-lg">
+          <div class="card-body text-center ">
+            <p>It's an amazing and trusted website.I am satisfied.I like this decoration. </p>
+            <h2 class="card-title text-xl font-extrabold pt-3">Tahmina Sultana</h2>
+            <p>client</p>
+          </div>
+          <div class="flex justify-center items-center ">
+            <div class="w-24 rounded-full">
+              <img class="rounded-full" src="https://i.ibb.co/5Gk2qjk/images-1.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-gray-200 w-72 h-64 shadow-xl p-3 py-4  grid justify-center items-center rounded-lg">
+          <div class="card-body text-center ">
+            <p>It's an amazing and trusted website.I am satisfied.I like this decoration. </p>
+            <h2 class="card-title text-xl font-extrabold pt-3">Ikhram Chowdory</h2>
+            <p>client</p>
+          </div>
+          <div class="flex justify-center items-center ">
+            <div class="w-20 rounded-full">
+              <img class="rounded-full" src="https://i.ibb.co/VJRdfr4/images.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-gray-200 w-72 h-64 shadow-xl p-3 py-4  grid justify-center items-center rounded-lg">
+          <div class="card-body text-center ">
+            <p>It's an amazing and trusted website.I am satisfied.I like this decoration. </p>
+            <h2 class="card-title text-xl font-extrabold pt-3">Jerin Islam</h2>
+            <p>client</p>
+          </div>
+          <div class="flex justify-center items-center ">
+            <div class="w-20 rounded-full">
+              <img class="rounded-full" src="https://i.ibb.co/ftq1t1X/images-2.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-gray-200 w-72 h-64 shadow-xl p-3 py-4  grid justify-center items-center rounded-lg">
+          <div class="card-body text-center ">
+            <p>It's an amazing and trusted website.I am satisfied.I like this decoration. </p>
+            <h2 class="card-title text-xl font-extrabold pt-3">Safaet Alam</h2>
+            <p>client</p>
+          </div>
+          <div class="flex justify-center items-center ">
+            <div class="w-20 rounded-full">
+              <img class="rounded-full" src="https://i.ibb.co/VJRdfr4/images.png" />
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      </div>
+
+    </section>
+
+    <!-- What people Say section end -->
+
+
   <!-- Rinterio news Section start  -->
 
-  <section class="mx-20  bg-violet-50 py-14">
+  <section class=" mx-12 lg:mx-20  lg:bg-violet-50 pb-10 lg:pb-14 lg:py-14">
 
-    <div class="grid justify-center items-center w-48 lg:w-full text-center">
-      <div class="card flex justify-center items-center gap-4 rounded-full bg-[#FFFFFF]  w-72 p-3 mb-8 mx-96">
+    <div class="grid justify-center items-center 64 lg:w-full text-center">
+      <div class="card flex justify-center items-center gap-4 rounded-full bg-[#FFFFFF] w-52 lg:w-72 p-3 mb-8 lg:mx-96 ms-12 ">
           <i class="fa-solid fa-arrow-right"></i>
           <div class="card-body">
               <h3 class="card-title">Rinterio News</h3>
@@ -394,7 +502,7 @@
 
     <div class="grid lg:flex gap-16 justify-center items-center">
 
-      <div class="card bg-base-100 w-96 shadow-xl grid gap-3 justify-center items-center p-5 rounded-md">
+      <div class="card bg-base-100 w-80 lg:w-96 shadow-xl grid gap-3 justify-center items-center p-5 rounded-md">
         <figure class=" flex justify-center items-center">
           <img
             src="https://i.ibb.co/CvCm5qf/article1.png"
@@ -422,7 +530,8 @@
         </div>
         </div>
       </div>
-      <div class="card bg-base-100 w-96 shadow-xl grid gap-3 justify-center items-center p-5 rounded-md">
+
+      <div class="card bg-base-100 w-80 lg:w-96 shadow-xl grid gap-3 justify-center items-center p-5 rounded-md">
         <figure class=" flex justify-center items-center">
           <img
             src="https://i.ibb.co/CvCm5qf/article1.png"
@@ -450,7 +559,8 @@
         </div>
         </div>
       </div>
-      <div class="card bg-base-100 w-96 shadow-xl grid gap-3 justify-center items-center p-5 rounded-md">
+
+      <div class="card bg-base-100 w-80 lg:w-96 shadow-xl grid gap-3 justify-center items-center p-5 rounded-md">
         <figure class=" flex justify-center items-center">
           <img
             src="https://i.ibb.co/CvCm5qf/article1.png"
@@ -488,10 +598,10 @@
 
   <!-- Let's contact Section start  -->
 
-  <section class="mx-20 mt-2 p-20" style="background-image:url(https://i.ibb.co/2S9n9X9/bg.jpg);">
+  <section class="let lg:mx-20 lg:mt-2 p-10 lg:p-20 py-12 mt-4 " style="background-image: url(https://i.ibb.co/qy0xFvq/bg.jpg);">
 
-    <div class="grid justify-center items-center w-48 lg:w-full text-center">
-      <div class="card flex justify-center items-center gap-4 rounded-full bg-[#ABEF5F33]  w-72 p-3 mb-8 mx-96">
+    <div class="grid justify-center items-center w-64 lg:w-full text-center ps-16">
+      <div class="card flex justify-center items-center gap-4 rounded-full bg-[#ABEF5F33] w-52 lg:w-72 p-3 mb-8 lg:mx-96">
           <i class="fa-solid fa-arrow-right"></i>
           <div class="card-body">
               <h3 class="card-title">Let’s Connect</h3>
@@ -505,19 +615,19 @@
     </div>
 
 
-    <div class=" grid justify-center items-center">
+    <div class=" grid justify-center items-center ">
 
       <form class="grid gap-5">
 
-        <label class="flex gap-5">
-          <input class="py-4 pe-64 ps-5 text-start rounded-full" type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs" />
-          <input class="py-4 pe-64 ps-5 text-start rounded-full" type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs" />
+        <label class=" grid lg:flex gap-5">
+          <input class="py-4 lg:pe-64 ps-3 lg:ps-5 text-start rounded-full" type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs" />
+          <input class="py-4 lg:pe-64 ps-3 lg:ps-5 text-start rounded-full" type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs" />
         </label>
         
         
-        <label class="flex gap-5">
-          <input class="py-4 pe-64 ps-5 text-start rounded-full" type="text" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs" />
-          <input class="py-4 pe-64 ps-5 text-start rounded-full" type="text" placeholder="Email Address*" class="input input-bordered w-full max-w-xs" />
+        <label class="grid lg:flex gap-5">
+          <input class="py-4 lg:pe-64 ps-3 lg:ps-5 text-start rounded-full" type="text" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs" />
+          <input class="py-4 lg:pe-64 ps-3 lg:ps-5 text-start rounded-full" type="text" placeholder="Email Address*" class="input input-bordered w-full max-w-xs" />
         </label>
         
         <textarea class="pb-24 pt-5 pe-40 ps-5 text-start rounded-3xl" class="textarea textarea-bordered" placeholder="Write your message here"></textarea>
@@ -525,7 +635,7 @@
       </form>
 
       <div class="grid grid-flow-col gap-4 justify-center">
-        <div class="btn bg-[#ABEF5F] text-black lg:text-xl flex  lg:flex gap-5 p-2 my-4  px-96 rounded-full font-extrabold justify-center items-center w-full  ">
+        <div class="btn bg-[#ABEF5F] text-black lg:text-xl flex  lg:flex gap-5 p-2 my-4 px-20 lg:px-96 rounded-full font-extrabold justify-center items-center w-full  ">
             <h3>Send Mail</h3>
             <img src="https://i.ibb.co/55wsrW2/arrow-up-right-01-1.png" alt="">
         </div>
@@ -543,7 +653,7 @@
 
     <!-- Large device star  -->
 
-    <footer class="footer footer-center bg-slate-950 p-48 mx-20 mb-10 text-primary-content p-10 hidden lg:block">
+    <footer class="footer footer-center bg-slate-950 p-48 mx-20 mb-10 text-primary-content p-10 hidden lg:block mt-4">
         <aside>
             <div class="btn btn-ghost text-xl lg:flex gap-4 justify-center pb-5">
                 <img src="https://i.ibb.co/17XVsTk/arrow-up-right-01.png" alt="">
@@ -580,17 +690,17 @@
 
     <!-- small device start  -->
 
-    <footer class="footer footer-center bg-slate-950  text-primary-content  lg:hidden p-12">
+    <footer class="footer footer-center bg-slate-950  text-primary-content  lg:hidden p-12 mt-4">
         <aside>
             <div class="btn btn-ghost text-xl flex gap-4 justify-center pb-5">
                 <img src="https://i.ibb.co/17XVsTk/arrow-up-right-01.png" alt="">
                 <h1 class="text-3xl text-white font-extrabold">Rinterio</h1>
             </div>
-            <p class="text-xl grid justify-center text-[#737373]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <p class="text-xl grid justify-center text-[#737373] text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             Providing reliable tech since 1992</p>
     
             <div class=" grid justify-center ">
-                <ul class="grid justify-center gap-2 text-[#737373] text-base pb-8">
+                <ul class="grid justify-center text-center gap-2 text-[#737373] text-base pb-8">
                     <li><a>Home</a></li>
                     <li>
                       <a>Service</a>
@@ -605,12 +715,15 @@
         </aside>
         <nav>
           <div class="grid grid-flow-col gap-4 justify-center">
-            <div class="btn bg-[#ABEF5F] text-black text-xl  flex  justify-center  gap-3  p-2 py-3 rounded-full font-extrabold w-60  mx-96   ">
+            <div class="btn bg-[#ABEF5F] text-black text-xl  flex  justify-center  gap-3  p-2 py-3 rounded-full font-extrabold w-60  lg:mx-96 ms-7 lg:ms-0  ">
                 <h3 class="text-white">Book Consult</h3>
                 <img src="https://i.ibb.co/55wsrW2/arrow-up-right-01-1.png" alt="">
             </div>
           </div>
         </nav>
+
+
+       
     </footer>
 
     <!-- small device end  -->
